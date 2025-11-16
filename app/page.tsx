@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Check, Shield, Zap, Lock, Clock, BookOpen, Headphones, Star, AlertCircle } from 'lucide-react';
+import { Check, Shield, Zap, Lock, Clock, Star, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -48,8 +48,8 @@ function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-red-950/20 via-black to-black"></div>
 
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-700/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-700/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
 
       <Particles />
@@ -72,15 +72,16 @@ function HeroSection() {
 
         <div className="pt-8">
           <Button
-  onClick={() => {
-    const el = document.getElementById("pricing");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  }}
-  className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl shadow-red-600/50 transition-all duration-300 hover:scale-105"
->
-  🎬 Get Instant Access Now
-</Button>
-
+            onClick={() => {
+              const el = document.getElementById('pricing');
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }}
+            className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl shadow-red-600/50 transition-all duration-300 hover:scale-105"
+          >
+            🎬 Get Instant Access Now
+          </Button>
         </div>
       </div>
     </section>
@@ -111,7 +112,7 @@ function Particles() {
             animationDelay: `${Math.random() * 5}s`,
             animationDuration: `${5 + Math.random() * 10}s`
           }}
-        ></div>
+        />
       ))}
     </div>
   );
@@ -215,56 +216,57 @@ function PricingSection() {
 
   return (
     <>
-      <div id="pricing" className="pt-20 -mt-20"></div>
+      <div id="pricing" className="pt-20 -mt-20" />
       <section className="py-20 px-4 relative">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4 animate-fadeIn">
-          Choose Your Package 📦
-        </h2>
-        <p className="text-gray-400 text-center mb-16">Select the perfect bundle for you</p>
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4 animate-fadeIn">
+            Choose Your Package 📦
+          </h2>
+          <p className="text-gray-400 text-center mb-16">Select the perfect bundle for you</p>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {pricingPlans.map((plan, index) => (
-            <Card
-              key={index}
-              className={`bg-gradient-to-br from-gray-900 to-black border ${
-                plan.popular ? 'border-yellow-500/50 scale-105' : 'border-gray-800'
-              } backdrop-blur transition-transform hover:scale-105 relative`}
-            >
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black px-4 py-1 rounded-full text-sm font-bold">
-                  MOST POPULAR
-                </div>
-              )}
-              <CardContent className="p-8">
-                <div className="text-6xl mb-4 text-center">{plan.emoji}</div>
-                <h3 className="text-3xl font-bold text-white text-center mb-2">{plan.name}</h3>
-                <div className="text-center mb-6">
-                  <span className="text-5xl font-bold text-white">{plan.price}</span>
-                  <span className="text-gray-400 ml-2">one-time</span>
-                </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {pricingPlans.map((plan, index) => (
+              <Card
+                key={index}
+                className={`bg-gradient-to-br from-gray-900 to-black border ${
+                  plan.popular ? 'border-yellow-500/50 scale-105' : 'border-gray-800'
+                } backdrop-blur transition-transform hover:scale-105 relative`}
+              >
+                {plan.popular && (
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black px-4 py-1 rounded-full text-sm font-bold">
+                    MOST POPULAR
+                  </div>
+                )}
+                <CardContent className="p-8">
+                  <div className="text-6xl mb-4 text-center">{plan.emoji}</div>
+                  <h3 className="text-3xl font-bold text-white text-center mb-2">{plan.name}</h3>
+                  <div className="text-center mb-6">
+                    <span className="text-5xl font-bold text-white">{plan.price}</span>
+                    <span className="text-gray-400 ml-2">one-time</span>
+                  </div>
 
-                <div className="space-y-3 mb-8">
-                  {plan.features.map((feature, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-300">{feature}</span>
-                    </div>
-                  ))}
-                </div>
+                  <div className="space-y-3 mb-8">
+                    {plan.features.map((feature, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-300">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
 
-                <Button
-                  onClick={() => window.location.href = plan.checkoutUrl}
-                  className={`w-full bg-gradient-to-r ${plan.buttonColor} hover:opacity-90 text-white py-6 text-lg font-bold rounded-lg transition-all`}
-                >
-                  Get {plan.name} - {plan.price}
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+                  <Button
+                    onClick={() => (window.location.href = plan.checkoutUrl)}
+                    className={`w-full bg-gradient-to-r ${plan.buttonColor} hover:opacity-90 text-white py-6 text-lg font-bold rounded-lg transition-all`}
+                  >
+                    Get {plan.name} - {plan.price}
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
@@ -436,7 +438,7 @@ function FinalCTASection() {
           {finalPlans.map((plan, index) => (
             <Button
               key={index}
-              onClick={() => window.location.href = plan.url}
+              onClick={() => (window.location.href = plan.url)}
               size="lg"
               className={`bg-gradient-to-r ${plan.color} hover:opacity-90 text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl transition-all hover:scale-105`}
             >
