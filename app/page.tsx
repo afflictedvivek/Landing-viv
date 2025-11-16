@@ -72,11 +72,15 @@ function HeroSection() {
 
         <div className="pt-8">
           <Button
-            size="lg"
-            className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl shadow-red-600/50 transition-all duration-300 hover:scale-105"
-          >
-            🎬 Get Instant Access Now
-          </Button>
+  onClick={() => {
+    const el = document.getElementById("pricing");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl shadow-red-600/50 transition-all duration-300 hover:scale-105"
+>
+  🎬 Get Instant Access Now
+</Button>
+
         </div>
       </div>
     </section>
