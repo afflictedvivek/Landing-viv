@@ -56,12 +56,12 @@ function HeroSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center space-y-8 animate-fadeIn">
         <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-          🔥 Premium Video Bundle 🔥
-        </h1>
+🔥 Unlock Your Private Video Library Instantly 🔥
+       </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          Get instant access to our <span className="text-red-500 font-semibold">exclusive collection</span> of premium content.
-          <span className="text-yellow-400 font-semibold"> Over 500+ videos</span> waiting for you!
+          Choose your bundle — Get up to <span className="text-red-500 font-semibold">60,000+ exclusive clips</span>delivered privately within
+          <span className="text-yellow-400 font-semibold"> 5 minutes after payment!
         </p>
 
         <div className="flex flex-wrap justify-center gap-6 md:gap-12 mt-12">
@@ -80,7 +80,7 @@ function HeroSection() {
             }}
             className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl shadow-red-600/50 transition-all duration-300 hover:scale-105"
           >
-            🎬 Get Instant Access Now
+            👉 Unlock My Bundle Now
           </Button>
         </div>
       </div>
@@ -123,7 +123,7 @@ function WhyTrustUsSection() {
     <section className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16 animate-fadeIn">
-          Why Trust Us? 🤝
+          Why Over 50,000+ Indians Trust Us ❤️
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
@@ -171,11 +171,11 @@ function PricingSection() {
       emoji: '🎬',
       price: '₹299',
       features: [
-        '200+ Premium Videos',
-        'HD Quality Content',
-        'Instant Download',
+        'Bonus Library',
+        'Priority Delivery',
+        'Unlimited Downloads',
         'Lifetime Access',
-        'Regular Updates'
+        'Weekly New Content'
       ],
       buttonColor: 'from-orange-500 to-orange-600',
       checkoutUrl: 'https://your-store.myshopify.com/cart/premium-299'
@@ -185,12 +185,11 @@ function PricingSection() {
       emoji: '👑',
       price: '₹399',
       features: [
-        '400+ Premium Videos',
-        'Full HD Quality',
-        'Priority Support',
-        'Exclusive Categories',
-        'Lifetime Access',
-        'Weekly New Content'
+        'Everything Unlocked',
+        'Monthly New Video Updates',
+        '24/7 VIP Support',
+        'Bonus Collections',
+        'Lifetime Access'
       ],
       buttonColor: 'from-yellow-500 to-yellow-600',
       checkoutUrl: 'https://your-store.myshopify.com/cart/ultimate-399',
@@ -201,12 +200,12 @@ function PricingSection() {
       emoji: '💎',
       price: '₹499',
       features: [
-        '500+ Premium Videos',
-        '4K Ultra HD Quality',
-        'VIP Support',
-        'All Categories Unlocked',
+        'New Leaked Videos',
+        'Daily New Video Updates',
+        'Exclusive Telegram Channels',
+        'Everything From Ultimate',
+        'VIP Priority Support',
         'Lifetime Access',
-        'Daily New Content',
         'Bonus Content Pack'
       ],
       buttonColor: 'from-blue-500 to-blue-600',
