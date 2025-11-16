@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { Check, Shield, Zap, Lock, Clock, Star, AlertCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import Button from '@/components/ui/button';
+import Card from '@/components/ui/card';
+import CardContent from '@/components/ui/card-content';
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -45,7 +46,7 @@ export default function Home() {
 function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-red-950/20 via-black to-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-red-950/20 via-black to-black" />
 
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-3xl animate-pulse" />
@@ -56,12 +57,12 @@ function HeroSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center space-y-8 animate-fadeIn">
         <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-🔥 Unlock Your Private Video Library Instantly 🔥
-       </h1>
+          🔥 Premium Video Bundle 🔥
+        </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          Choose your bundle — Get up to <span className="text-red-500 font-semibold">60,000+ exclusive clips</span>delivered privately within
-          <span className="text-yellow-400 font-semibold"> 5 minutes after payment!
+          Get instant access to our <span className="text-red-500 font-semibold">exclusive collection</span> of premium content.
+          <span className="text-yellow-400 font-semibold"> Over 500+ videos</span> waiting for you!
         </p>
 
         <div className="flex flex-wrap justify-center gap-6 md:gap-12 mt-12">
@@ -74,13 +75,11 @@ function HeroSection() {
           <Button
             onClick={() => {
               const el = document.getElementById('pricing');
-              if (el) {
-                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }
+              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }}
             className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl shadow-red-600/50 transition-all duration-300 hover:scale-105"
           >
-            👉 Unlock My Bundle Now
+            🎬 Get Instant Access Now
           </Button>
         </div>
       </div>
@@ -123,7 +122,7 @@ function WhyTrustUsSection() {
     <section className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16 animate-fadeIn">
-          Why Over 50,000+ Indians Trust Us ❤️
+          Why Trust Us? 🤝
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16">
@@ -171,11 +170,11 @@ function PricingSection() {
       emoji: '🎬',
       price: '₹299',
       features: [
-        'Bonus Library',
-        'Priority Delivery',
-        'Unlimited Downloads',
+        '200+ Premium Videos',
+        'HD Quality Content',
+        'Instant Download',
         'Lifetime Access',
-        'Weekly New Content'
+        'Regular Updates'
       ],
       buttonColor: 'from-orange-500 to-orange-600',
       checkoutUrl: 'https://your-store.myshopify.com/cart/premium-299'
@@ -185,11 +184,12 @@ function PricingSection() {
       emoji: '👑',
       price: '₹399',
       features: [
-        'Everything Unlocked',
-        'Monthly New Video Updates',
-        '24/7 VIP Support',
-        'Bonus Collections',
-        'Lifetime Access'
+        '400+ Premium Videos',
+        'Full HD Quality',
+        'Priority Support',
+        'Exclusive Categories',
+        'Lifetime Access',
+        'Weekly New Content'
       ],
       buttonColor: 'from-yellow-500 to-yellow-600',
       checkoutUrl: 'https://your-store.myshopify.com/cart/ultimate-399',
@@ -200,12 +200,12 @@ function PricingSection() {
       emoji: '💎',
       price: '₹499',
       features: [
-        'New Leaked Videos',
-        'Daily New Video Updates',
-        'Exclusive Telegram Channels',
-        'Everything From Ultimate',
-        'VIP Priority Support',
+        '500+ Premium Videos',
+        '4K Ultra HD Quality',
+        'VIP Support',
+        'All Categories Unlocked',
         'Lifetime Access',
+        'Daily New Content',
         'Bonus Content Pack'
       ],
       buttonColor: 'from-blue-500 to-blue-600',
