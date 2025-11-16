@@ -119,7 +119,7 @@ function Particles() {
 
 function WhyTrustUsSection() {
   return (
-    <section className="py-20 px-4 relative">
+    <section id="pricing" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16 animate-fadeIn">
           Why Trust Us? 🤝
