@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { Check, Shield, Zap, Lock, Clock, Star, AlertCircle } from 'lucide-react';
-import Button from '@/components/ui/button';
-import Card from '@/components/ui/card';
-import CardContent from '@/components/ui/card-content';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState({
