@@ -214,7 +214,6 @@ function PricingSection() {
   ];
 
   return (
-    return (
     <>
       <div id="pricing" className="pt-20 -mt-20"></div>
       <section className="py-20 px-4 relative">
