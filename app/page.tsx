@@ -177,7 +177,7 @@ function PricingSection() {
         'Regular Updates'
       ],
       buttonColor: 'from-orange-500 to-orange-600',
-      checkoutUrl: 'https://your-store.myshopify.com/cart/premium-299'
+      checkoutUrl: 'https://payments.cashfree.com/forms/299premium'
     },
     {
       name: 'Ultimate',
@@ -192,7 +192,7 @@ function PricingSection() {
         'Weekly New Content'
       ],
       buttonColor: 'from-yellow-500 to-yellow-600',
-      checkoutUrl: 'https://your-store.myshopify.com/cart/ultimate-399',
+      checkoutUrl: 'https://payments.cashfree.com/forms/399ultimate',
       popular: true
     },
     {
@@ -209,7 +209,7 @@ function PricingSection() {
         'Bonus Content Pack'
       ],
       buttonColor: 'from-blue-500 to-blue-600',
-      checkoutUrl: 'https://your-store.myshopify.com/cart/exclusive-499'
+      checkoutUrl: 'https://payments.cashfree.com/forms?code=499exclusive'
     }
   ];
 
