@@ -405,19 +405,19 @@ function FinalCTASection() {
       name: 'Premium',
       price: '₹299',
       color: 'from-orange-500 to-orange-600',
-      url: 'https://your-store.myshopify.com/cart/premium-299'
+      url: 'https://payments.cashfree.com/forms/299premium'
     },
     {
       name: 'Ultimate',
       price: '₹399',
       color: 'from-yellow-500 to-yellow-600',
-      url: 'https://your-store.myshopify.com/cart/ultimate-399'
+      url: 'https://payments.cashfree.com/forms?code=399ultimate'
     },
     {
       name: 'Exclusive',
       price: '₹499',
       color: 'from-blue-500 to-blue-600',
-      url: 'https://your-store.myshopify.com/cart/exclusive-499'
+      url: 'https://payments.cashfree.com/forms/499exclusive'
     }
   ];
 
