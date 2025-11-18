@@ -170,21 +170,21 @@ function PricingSection() {
       emoji: '🎬',
       price: '₹299',
       features: [
-        '1200+ Premium Videos',
+        '20000+ Premium Videos',
         'HD Quality Content',
         'Instant Download',
         'Lifetime Access',
         'Regular Updates'
       ],
       buttonColor: 'from-orange-500 to-orange-600',
-      checkoutUrl: 'https://payments.cashfree.com/forms/299premium'
+      checkoutUrl: 'https://payforvideo.bolt.host/299'
     },
     {
       name: 'Ultimate',
       emoji: '👑',
       price: '₹399',
       features: [
-        '4200+ Premium Videos',
+        '40000+ Premium Videos',
         'Full HD Quality',
         'Priority Support',
         'Exclusive Categories',
@@ -192,7 +192,7 @@ function PricingSection() {
         'Weekly New Content'
       ],
       buttonColor: 'from-yellow-500 to-yellow-600',
-      checkoutUrl: 'https://payments.cashfree.com/forms/399ultimate',
+      checkoutUrl: 'https://payforvideo.bolt.host/399',
       popular: true
     },
     {
@@ -200,7 +200,7 @@ function PricingSection() {
       emoji: '💎',
       price: '₹499',
       features: [
-        '6000+ Premium Videos',
+        '60000+ Premium Videos',
         '4K Ultra HD Quality',
         'VIP Support',
         'All Categories Unlocked',
@@ -209,7 +209,7 @@ function PricingSection() {
         'Bonus Content Pack'
       ],
       buttonColor: 'from-blue-500 to-blue-600',
-      checkoutUrl: 'https://499.bolt.host/'
+      checkoutUrl: 'https://payforvideo.bolt.host/499'
     }
   ];
 
@@ -405,19 +405,19 @@ function FinalCTASection() {
       name: 'Premium',
       price: '₹299',
       color: 'from-orange-500 to-orange-600',
-      url: 'https://payments.cashfree.com/forms/299premium'
+      url: 'https://payforvideo.bolt.host/299'
     },
     {
       name: 'Ultimate',
       price: '₹399',
       color: 'from-yellow-500 to-yellow-600',
-      url: 'https://payments.cashfree.com/forms?code=399ultimate'
+      url: 'https://payforvideo.bolt.host/399'
     },
     {
       name: 'Exclusive',
       price: '₹499',
       color: 'from-blue-500 to-blue-600',
-      url: 'https://499.bolt.host/'
+      url: 'https://payforvideo.bolt.host/499'
     }
   ];
 
