@@ -170,7 +170,7 @@ function PricingSection() {
       emoji: '🎬',
       price: '₹299',
       features: [
-        '200+ Premium Videos',
+        '1200+ Premium Videos',
         'HD Quality Content',
         'Instant Download',
         'Lifetime Access',
@@ -184,7 +184,7 @@ function PricingSection() {
       emoji: '👑',
       price: '₹399',
       features: [
-        '400+ Premium Videos',
+        '4200+ Premium Videos',
         'Full HD Quality',
         'Priority Support',
         'Exclusive Categories',
@@ -200,7 +200,7 @@ function PricingSection() {
       emoji: '💎',
       price: '₹499',
       features: [
-        '500+ Premium Videos',
+        '6000+ Premium Videos',
         '4K Ultra HD Quality',
         'VIP Support',
         'All Categories Unlocked',
@@ -209,7 +209,7 @@ function PricingSection() {
         'Bonus Content Pack'
       ],
       buttonColor: 'from-blue-500 to-blue-600',
-      checkoutUrl: 'https://payments.cashfree.com/forms?code=499exclusive'
+      checkoutUrl: 'https://499.bolt.host/'
     }
   ];
 
@@ -417,7 +417,7 @@ function FinalCTASection() {
       name: 'Exclusive',
       price: '₹499',
       color: 'from-blue-500 to-blue-600',
-      url: 'https://payments.cashfree.com/forms/499exclusive'
+      url: 'https://499.bolt.host/'
     }
   ];
 
